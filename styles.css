@@ -1,5 +1,6 @@
 body {
-    font-family: 'Open Sans',sans-serif
+    font-family: 'Open Sans',sans-serif;
+    margin: 0;
 }
 #uploadLabel {
   display: block;
@@ -12,7 +13,7 @@ body {
   color: white;
   background: pink;
   background: linear-gradient(pink, #f2e8ff);
-  font-size: larger;
+  font-size: x-large;
 }
 #photoUpload {
   display: none;
@@ -32,11 +33,13 @@ button:hover {
 }
 .btn-primary {
     width: 100px;
-    border: 1px dashed pink;
+    border: 1px dashed #ffafbd;
     background: white;
-    color: pink;
+    color: #ffafbd;
     display: inline-block;
     margin: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
 }
 
 img {
@@ -48,6 +51,9 @@ img#result {
 
 
 /* modify dat.GUI built-in style */
+.dg.a {
+    margin-right: 0;
+}
 .dg .cr.number {
     border-left: 3px solid pink;
 }
@@ -62,6 +68,6 @@ img#result {
 }
 @media screen and (min-width: 600px) {
   img#result {
-    width: calc(100% - 253px);
+    width: calc(100% - 245px);
   } 
 }
