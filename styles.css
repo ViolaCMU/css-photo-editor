@@ -1,0 +1,67 @@
+body {
+    font-family: 'Open Sans',sans-serif
+}
+#uploadLabel {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  padding: 45vh 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  background: pink;
+  background: linear-gradient(pink, #f2e8ff);
+  font-size: larger;
+}
+#photoUpload {
+  display: none;
+}
+#actions {
+    display: none;
+    text-align: center;
+}
+#actions button {
+    display: inline-block;
+}
+button:focus {
+    outline:none;
+}
+button:hover {
+    background: #ffebee;
+}
+.btn-primary {
+    width: 100px;
+    border: 1px dashed pink;
+    background: white;
+    color: pink;
+    display: inline-block;
+    margin: 10px;
+}
+
+img {
+  display: none;
+}
+img#result {
+    width: 100%;
+}
+
+
+/* modify dat.GUI built-in style */
+.dg .cr.number {
+    border-left: 3px solid pink;
+}
+.dg .c .slider-fg {
+    background: #ffd6dd;
+}
+.dg .c .slider:hover .slider-fg {
+    background: #ffd6dd;
+}
+.dg .cr.number input[type=text] {
+    color: #ffd6dd;
+}
+@media screen and (min-width: 600px) {
+  img#result {
+    width: calc(100% - 253px);
+  } 
+}

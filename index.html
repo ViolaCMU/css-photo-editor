@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My photo filter</title>
+  <script src="./dat.gui.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <label id="uploadLabel" for="photoUpload">Choose a photo</label>
+  <input id="photoUpload" type="file" name="photo" />
+  <img id="result" src="">
+  <img id="origin" class="desktop" src="">
+  <section id="actions" class="btn-group">
+    <button id="restart" class="btn-primary" type="button" onClick="restart()">Restart</button>
+    <button id="download" class="btn-primary" type="button" onClick="save()">Download</button>
+  </section>
+    
+  <script src="./index.js"></script>
+</body>
+</html>
